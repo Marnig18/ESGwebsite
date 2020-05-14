@@ -1,0 +1,106 @@
+
+
+
+
+.logo{
+  width: 50%;
+}
+
+.nav{
+  padding: 10px;
+
+}
+
+.nav-item{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  padding-right: 30px;
+  padding-left: 15px;
+}
+
+.nav-link{
+  color: #000;
+}
+
+
+.sectionheading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+
+#sliderrow{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0px
+}
+
+#sliderbox{
+  background-color: #992B22;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.sliderboxP{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.7em;
+  font-weight: 700
+}
+.sliderboxP2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+
+
+#aboutP{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  line-height: 2;
+  font-weight:400;
+  border-bottom: 2px solid black;
+  padding-bottom: 100px;
+  font-weight: normal;
+}
+
+
+
+.footer{
+  background-color: #68c830;
+
+}
+
+#footerTextrow1{
+  font-family: 'Raleway', sans-serif;
+  font-size:1em;
+}
+
+#footerTextrow2{
+  font-family: 'Raleway', sans-serif;
+  font-size:.5m;
+
+}
+
+
+
+
+.Teamdiv li{
+  list-style: none;
+}
+
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
