@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Empire State Greenhouses</title>
     <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">s
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -22,44 +23,72 @@
 <!-- header -->
   <div class="container-fluid">
     <div class="row">
-      <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses"/ class="mx-auto logo">
+      <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses" / class="mx-auto logo">
     </div>
-    <div class="row" id="navbar" style="background-color:#68c830">
-      <ul class="nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href=index.html>About</a>
-        </li>
-        <li class="nav-item">
-          <a  class="nav-link"href="team.html">Our Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="investors.html">Investors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <button class="nav-item float-left">Covid-19 Nexus</button>
-    </div>
+
+    <!-- navbar -->
+    <div class="navbar navbar-expand-lg" role="navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+          <ul class="navbar nav mx-auto">
+            <!-- <li class="nav-item dropdown ">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 About
+               </a>
+               <div class="dropdown-menu navDropdown" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="#">About</a>
+                 <a class="dropdown-item" href="mission.html">Our Mission</a>
+                 <a class="dropdown-item" href="team.html">Our Team</a>
+                <a class="dropdown-item" href="products.html">Products</a>
+               </div>
+             </li> -->
+
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mission.html">Our Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="investors.html">Investors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <!-- <button class="nav-item float-left">Covid-19 Nexus</button> -->
+        </div>
+      </div>
   </div>
   <!-- body -->
   <div class="container-fluid">
-      <h3 class="row">Contact</h3>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-11">
+          <h1 class="sectionheading">Contact</h1>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-2"></div>
-        <div class="col-8">
+        <div class="col-8" id="contactForm">
           <form>
             <div class="row">
               <div class="col input-field">
                 <i class="material-icons prefix">account_box</i>
                 <input placeholder="Name" id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
+                <label for="first_name" id="formLabel">First Name</label>
               </div>
               <div class="col"></div>
             </div>
@@ -67,21 +96,21 @@
               <div class="col input-field">
                 <i class="material-icons prefix">email</i>
                 <input placeholder="Email" id="email" type="text" class="validate">
-                <label for="phone-number">Email</label>
+                <label  id="formLabel"for="phone-number" >Email</label>
               </div>
               <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col input-field">
+              <div class="col input-field ">
                 <i class="material-icons prefix">local_phone</i>
-                <input placeholder="Phone Number" id="phone-number" type="text" class="validate">
-                <label for="phone-number">Phone Number</label>
+                <input placeholder="Phone Number" id="phone-number" type="text">
+                <label for="phone-number" id="formLabel">Phone Number</label>
               </div>
               <div class="col"></div>
             </div>
             <div class="row">
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
+              <div class=" col form-group">
+                <label for="exampleFormControlTextarea1" id="formLabel">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             </div>
@@ -99,7 +128,7 @@
 
 
   <!-- footer -->
-  <div class="row footer">
+  <!-- <div class="row footer">
     <div class="col-2">
       <img src="../assets/images/ESGLogo.jpg" alt="ESG Logo" class="img-fluid" style="padding:20px; object-fit:scale-down">
     </div>
@@ -111,6 +140,6 @@
         <p id=footerTextrow2>©2019 Empire State Greenhouses, LLC</p>
       </div>
       </div>
-    </div>
+    </div> -->
 </body>
 </html>

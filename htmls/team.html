@@ -1,34 +1,43 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Empire State Greenhouses</title>
-    <link href="../assets/css/reset.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Raleway:wght@200;300&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-<!-- header -->
+    <!-- header -->
     <div class="container-fluid">
       <div class="row">
-        <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses" class="mx-auto logo">
+        <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses"  class="mx-auto logo">
       </div>
-      <div class="row" id="navbar" style="background-color:#68c830">
-        <ul class="nav mx-auto">
+
+  <div class="navbar navbar-expand-lg" role="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar nav mx-auto">
           <li class="nav-item">
             <a class="nav-link active" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a  class="nav-link"href="#">Our Team</a>
+            <a class="nav-link" href="#">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Our Team</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="products.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="links.html">News</a>
+            <a class="nav-link" href="news.html">News</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="investors.html">Investors</a>
@@ -37,80 +46,97 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
-        <button class="nav-item float-left">Covid-19 Nexus</button>
-      </div
-<!-- header end -->
+        <!-- <button class="nav-item float-left">Covid-19 Nexus</button> -->
+      </div>
     </div>
-    <div class="Teamdiv container-fluid">
-      <h3 class="row">Who We Are</h3>
+
+    <!-- body -->
+    <div class="container-fluid" style="padding:0">
       <div class="row">
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/louis.jpg" alt="Loius. A Ferro: President and Chairman"/>
-          </div>
-          <div class="d-flex justify-content-center">
-            <p>Louis A. Ferro: President & Chairman</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/Shelley.jpg" alt="Shelley Goldberg:Chief Executive Officer"/>
-          </div>
-          <div class='row d-flex justify-content-center'>
-            <p>Shelley Goldberg: Chief Executive Officer</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/Jennifer.jpg" alt="Jennifer J. Fearon: Co-Founder $ Investor Relations"/>
-          </div>
-          <div class='row d-flex justify-content-center'>
-            <p>Jennifer J. Fearon: Co-Founder $ Investor Relations</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/Boris.jpg" alt="Boris Taylor: Chief Operating Officer"/>
-          </div>
-          <div class='row d-flex justify-content-center'>
-            <p>Boris Taylor: Chief Operating Officer</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/Richaard.jpg" alt="Richard P. George, PH.D: Chief Technology Officer"/>
-          </div>
-          <div class='row d-flex justify-content-center'>
-            <p>Richard P. George, PH.D: Chief Technology Officer</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class='row d-flex justify-content-center'>
-            <img src="../assets/images/team/jon.jpg" alt="Jonathan Gross: Chief Financial Officer"/>
-          </div>
-          <div class='row d-flex justify-content-center'>
-            <p>Jonathan Gross: Chief Financial Officer</p>
-          </div>
-        </div>
-      </div>
-<!-- footer -->
-      <div class="row footer">
-        <div class="col-2">
-          <img src="../assets/images/ESGLogo.jpg" alt="ESG Logo" class="img-fluid" style="padding:20px; object-fit:scale-down">
-        </div>
+        <div class="col-1"></div>
         <div class="col-10">
-          <div class="row mx-auto">
-            <p class="text-center" id=footerTextrow1>240 East 47th Street │ Suite 20D │ New York, NY 10017</p>
-          </div>
-          <div class="row">
-            <p id=footerTextrow2>©2019 Empire State Greenhouses, LLC</p>
-          </div>
+          <h1 class="sectionheading">Our Team</h1>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="card teamCard float-right" style="width: 18rem;">
+            <img src="../assets/images/team/louis.jpg" class="card-img-top" alt="Louis A. Ferro">
+            <div class="card-body">
+              <p class="card-text cardName">Louis A. Ferro</p>
+              <p class="card-text cardTitle">President & Chairman</p>
+            </div>
           </div>
         </div>
+        <div class="col-4">
+          <div class="card teamCard mx-auto " style="width: 18rem;">
+            <img src="../assets/images/team/Shelley.jpg" class="card-img-top" alt="Shelley Goldberg">
+            <div class="card-body">
+              <p class="card-text cardName">Shelly Goldberg</p>
+              <p class="card-text cardTitle">Cheif Executive Officer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card teamCard float-left" style="width: 18rem;">
+            <img src="../assets/images/team/jennifer.jpg" class="card-img-top" alt="Jennifer J. Fearon">
+            <div class="card-body">
+              <p class="card-text cardName">Jennifer J. Fearon</p>
+              <p class="card-text cardTitle">Cofounder & Investor Relations</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="card teamCard float-right" style="width: 18rem;">
+          <img src="../assets/images/team/jon.jpg" class="card-img-top" alt="Jonathan Gross">
+          <div class="card-body">
+            <p class="card-text cardName">Jonathan Gross</p>
+            <p class="card-text cardTitle">Chief Financial Oficer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card teamCard mx-auto " style="width: 18rem;">
+          <img src="../assets/images/team/Boris.jpg" class="card-img-top" alt="Boris Taylor">
+          <div class="card-body">
+            <p class="card-text cardName">Boris Taylor</p>
+            <p class="card-text cardTitle">Cheif Operating Officer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card teamCard float-left" style="width: 18rem;">
+          <img src="../assets/images/team/Richaard.jpg" class="card-img-top" alt="Richard P. George, Ph.D">
+          <div class="card-body">
+            <p class="card-text cardName">Richard P. George, Ph.D</p>
+            <p class="card-text cardTitle">Chief Technology Officer</p>
+          </div>
+        </div>
+      </div>
+  </div>
 
+    <!-- footer -->
+    <!-- <div class="container-fluid footer"> <div class="row"> <div class="col-2"> <img src="../assets/images/ESGLogo.jpg" alt="ESG Logo" class="img-fluid" style="padding:20px; object-fit:scale-down"> </div> <div class="col-10"> <div class="row
+    mx-auto"> <p class="text-center" id=footerTextrow1>240 East 47th Street │ Suite 20D │ New York, NY 10017</p> </div> <div class="row"> <p id=footerTextrow2>©2019 Empire State Greenhouses, LLC</p> </div> </div> </div> </div> -->
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+        $('.slider').slider({height: 350, indicators: false});
+
+      });
+    </script>
 
   </body>
 </html>
