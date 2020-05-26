@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,18 +7,20 @@
     <title>Empire State Greenhouses</title>
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Raleway:wght@200;300&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Open+Sans&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- header -->
     <div class="container-fluid">
       <div class="row">
-        <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses"  class="mx-auto logo">
+        <img src="../assets/images/ESGLogo.jpg" alt="Empire State Greehouses" / class="mx-auto logo">
       </div>
 
+      <!-- navbar -->
       <div class="navbar navbar-expand-lg" role="navigation">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,9 +40,16 @@
                   <a class="dropdown-item" href="products.html">Products</a>
                  </div>
                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
+               <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    News
+                  </a>
+                  <div class="dropdown-menu navDropdown" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="links.html">News</a>
+                    <a class="dropdown-item" href="#">Resources</a>
+
+                  </div>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" href="investors.html">Investors</a>
               </li>
@@ -50,73 +60,47 @@
             <!-- <button class="nav-item float-left">Covid-19 Nexus</button> -->
           </div>
         </div>
+
+    </div>
     <!-- body -->
     <div class="container-fluid" style="padding:0">
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <h1 class="sectionheading">Our Team</h1>
-        </div>
-        <div class="col-1"></div>
-      </div>
-      <div class="row">
-        <div class=" col-12 col-md-4">
-          <div class="card teamCard mx-auto float-md-right" style="width: 18rem;">
-            <img src="../assets/images/team/louis.jpg" class="card-img-top img-fluid" alt="Louis A. Ferro">
-            <div class="card-body">
-              <p class="card-text cardName">Louis A. Ferro</p>
-              <p class="card-text cardTitle">President & Chairman</p>
-            </div>
+      <div class="slider">
+        <ul class="slides" style="list-style:none; position:relative; z-index:0">
+          <li>
+            <img src="../assets/images/homepage/solarpanels_1.jpg">
+          </li>
+          <li>
+            <img src="../assets/images/homepage/landscape.jpg">
+          </li>
+          <li>
+            <img src="../assets/images/homepage/crops.jpg">
+          </li>
+          <li>
+            <img src="../assets/images/homepage/silo.jpg">
+          </li>
+          <li>
+            <img src="../assets/images/homepage/spinich.jpg">
+          </li>
+        </ul>
+        <div class="row h-100" id="sliderrow">
+          <div class="col-3"></div>
+          <div class="col-3  d-flex flex-column text-center"  id="sliderbox">
+            <p class="sliderboxP">Beyond Net Zero</p>
+            <p class="sliderboxP">Carbon Negative</p>
+            <p class="sliderboxP2 ">High impact closed-loop-sustainable solutions</p>
           </div>
+          <div class="col-6"></div>
         </div>
-        <div class=" col-12 col-md-4">
-          <div class="card teamCard mx-auto " style="width: 18rem;">
-            <img src="../assets/images/team/Shelley.jpg" class="card-img-top img-fluid" alt="Shelley Goldberg">
-            <div class="card-body">
-              <p class="card-text cardName">Shelly Goldberg</p>
-              <p class="card-text cardTitle">Cheif Executive Officer</p>
-            </div>
-          </div>
-        </div>
-        <div class=" col-12 col-md-4">
-          <div class="card teamCard mx-auto float-md-left" style="width: 18rem;">
-            <img src="../assets/images/team/jennifer.jpg" class="card-img-top img-fluid" alt="Jennifer J. Fearon">
-            <div class="card-body">
-              <p class="card-text cardName">Jennifer J. Fearon</p>
-              <p class="card-text cardTitle">Cofounder & Investor Relations</p>
-            </div>
-          </div>
-        </div>
+
     </div>
-    <div class="row">
-      <div class=" col-12 col-md-4">
-        <div class="card teamCard  mx-auto float-md-right" style="width: 18rem;">
-          <img src="../assets/images/team/jon.jpg" class="card-img-top img-fluid" alt="Jonathan Gross">
-          <div class="card-body">
-            <p class="card-text cardName">Jonathan Gross</p>
-            <p class="card-text cardTitle">Chief Financial Oficer</p>
-          </div>
-        </div>
-      </div>
-      <div class=" col-12 col-md-4">
-        <div class="card teamCard mx-auto " style="width: 18rem;">
-          <img src="../assets/images/team/Boris.jpg" class="card-img-top img-fluid" alt="Boris Taylor">
-          <div class="card-body">
-            <p class="card-text cardName">Boris Taylor</p>
-            <p class="card-text cardTitle">Cheif Operating Officer</p>
-          </div>
-        </div>
-      </div>
-      <div class=" col-12 col-md-4">
-        <div class="card teamCard mx-auto float-md-left" style="width: 18rem;">
-          <img src="../assets/images/team/Richaard.jpg" class="card-img-top img-fluid" alt="Richard P. George, Ph.D">
-          <div class="card-body">
-            <p class="card-text cardName">Richard P. George, Ph.D</p>
-            <p class="card-text cardTitle">Chief Technology Officer</p>
-          </div>
-        </div>
-      </div>
-  </div>
+</div>
+<div class="container-fluid">
+
+    
+
+
+
+</div>
 
     <!-- footer -->
     <!-- <div class="container-fluid footer"> <div class="row"> <div class="col-2"> <img src="../assets/images/ESGLogo.jpg" alt="ESG Logo" class="img-fluid" style="padding:20px; object-fit:scale-down"> </div> <div class="col-10"> <div class="row
