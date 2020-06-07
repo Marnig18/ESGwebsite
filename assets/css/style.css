@@ -26,7 +26,7 @@
   font-size: 1.2em;
   padding-right: 30px;
   padding-left: 30px;
-  border-right: 1px solid black
+  /* border-right: 1px solid black */
 }
 
 .nav-link{
@@ -134,25 +134,27 @@
 .teamCard{
   box-shadow: none;
   border:0;
-  margin: .75rem
+  margin: .75rem;
+  max-width:50%
 }
 
 .card-body{
   background-color: #a9a9a9;
   box-shadow: none;
+  padding: none;
 }
 
 
 .cardName{
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3em;
+  font-size: .7em;
   font-weight:bold;
   margin: 0
 }
 
 .cardTitle{
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: .5em;
   font-weight:bold
 }
 
